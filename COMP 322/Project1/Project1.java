@@ -84,16 +84,17 @@ public class Project1 {
             {
                 continue;
             }
-            System.out.println(i + "\t" + table[i].getParentIndex() + "\t");
+            System.out.print(i + "\t" + table[i].getParentIndex() + "\t");
             if (table[i].getFirstChildIndex() != -1)
             {
-                System.out.println(table[i].getFirstChildIndex());
+                System.out.print(table[i].getFirstChildIndex());
             }
             System.out.println("\t");
             if (table[i].getYoungerSiblingIndex() != -1)
             {
-                System.out.println(table[i].getYoungerSiblingIndex());
+                System.out.print(table[i].getYoungerSiblingIndex());
             }
+            System.out.println();
         }
     } //End of printHierarchy Method
 
